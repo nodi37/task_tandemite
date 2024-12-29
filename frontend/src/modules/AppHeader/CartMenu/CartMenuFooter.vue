@@ -30,43 +30,36 @@ defineEmits<{
     </VButton>
   </div>
 </template>
+<style lang="sass" scoped>
+.footer
+  display: flex
+  flex-direction: column
+  padding: 0 34px 28px 34px
 
-<style lang="scss" scoped>
-.footer {
-  display: flex;
-  flex-direction: column;
-  padding: 0 34px 28px 34px;
+  &__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 18px
+    color: var(--color-gray-800)
 
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 18px;
-    color: var(--color-gray-800);
+    & > strong
+      font-weight: 700
 
-    & > strong {
-      font-weight: 700;
-    }
-  }
+  &__total-price
+    display: flex
+    flex-direction: column
+    gap: 4px
+    font-size: 14px
+    line-height: 24px
+    font-weight: 300
+    color: var(--color-gray-800)
 
-  &__total-price {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 300;
-    color: var(--color-gray-800);
+    & > strong
+      font-size: 22px
+      line-height: 24px
+      font-weight: 900
 
-    & > strong {
-      font-size: 22px;
-      line-height: 24px;
-      font-weight: 900;
-    }
-  }
-
-  &__button {
-    padding: 16px;
-  }
-}
+  &__button
+    padding: 16px
 </style>

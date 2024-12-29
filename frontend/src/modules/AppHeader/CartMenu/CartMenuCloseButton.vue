@@ -7,16 +7,14 @@ import CancelIcon from "@/assets/cancel.svg?component";
     <CancelIcon class="button__icon" />
   </button>
 </template>
-<style lang="scss" scoped>
-.button {
-  padding: 13px;
-  background-color: var(--color-primary-600);
+<style lang="sass" scoped>
+.button
+  padding: 13px
+  background-color: var(--color-primary-600)
 
-  &__icon {
-    display: block;
-    height: 15px;
-    width: 15px;
-    fill: var(--color-white);
-  }
-}
+  &__icon
+    display: block
+    height: 15px
+    width: 15px
+    fill: var(--color-white)
 </style>

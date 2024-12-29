@@ -34,88 +34,75 @@ defineProps<{
     </div>
   </section>
 </template>
-<style lang="scss" scoped>
-.intro-section {
-  padding-inline: 8px;
-  background-color: var(--color-primary-600);
+<style lang="sass" scoped>
+.intro-section
+  padding-inline: 8px
+  background-color: var(--color-primary-600)
 
-  &__center-container {
-    width: 100%;
-    height: 100%;
-    max-width: 1206px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+  &__center-container
+    width: 100%
+    height: 100%
+    max-width: 1206px
+    margin: 0 auto
+    display: flex
+    flex-direction: column
 
-    @include md {
-      flex-direction: row;
-      gap: 82px;
-    }
-  }
+    @include md
+      flex-direction: row
+      gap: 82px
 
-  &__content {
-    position: relative;
-    padding-block: 64px;
+  &__content
+    position: relative
+    padding-block: 64px
 
-    @include md {
-      flex: 1;
-    }
-  }
+    @include md
+      flex: 1
 
-  &__decoration {
-    position: absolute;
-    top: -22%;
-    right: 68%;
-    height: 133%;
-    width: auto;
-  }
+  &__decoration
+    position: absolute
+    top: -22%
+    right: 68%
+    height: 133%
+    width: auto
 
-  &__title {
-    color: var(--color-white);
-    font-weight: bold;
-    font-size: 56px;
-    line-height: 60px;
-    margin-bottom: 32px;
-  }
+  &__title
+    color: var(--color-white)
+    font-weight: bold
+    font-size: 56px
+    line-height: 60px
+    margin-bottom: 32px
 
-  &__subtitle {
-    color: var(--color-white);
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 32px;
-  }
+  &__subtitle
+    color: var(--color-white)
+    font-weight: bold
+    font-size: 14px
+    line-height: 24px
+    margin-bottom: 32px
 
-  &__description {
-    color: var(--color-gray-100);
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 24px;
-  }
+  &__description
+    color: var(--color-gray-100)
+    font-weight: 300
+    font-size: 14px
+    line-height: 24px
 
-  &__image-wrapper {
-    flex: 1;
-    display: flex;
-    align-items: center;
+  &__image-wrapper
+    flex: 1
+    display: flex
+    align-items: center
 
-    @include lg {
-      display: block;
-      height: 1px;
-    }
-  }
+    @include lg
+      display: block
+      height: 1px
 
-  &__image {
-    display: block;
-    height: 300px;
-    width: 300px;
-    margin: 0 auto;
+  &__image
+    display: block
+    height: 300px
+    width: 300px
+    margin: 0 auto
 
-    @include md {
-      height: auto;
-      width: auto;
-      min-width: 0;
-      max-width: 100%;
-    }
-  }
-}
+    @include md
+      height: auto
+      width: auto
+      min-width: 0
+      max-width: 100%
 </style>

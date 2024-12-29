@@ -33,75 +33,64 @@ defineEmits<{ (e: "delete"): void }>();
     </div>
   </div>
 </template>
+<style lang="sass" scoped>
+.item
+  background-color: #f1f5f567
+  padding: 9px 11px
 
-<style lang="scss" scoped>
-.item {
-  background-color: #f1f5f567;
-  padding: 9px 11px;
+  &__info-container
+    display: flex
+    gap: 13px
+    padding-bottom: 8px
+    border-bottom: 1px solid #f1f5f5
 
-  &__info-container {
-    display: flex;
-    gap: 13px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #f1f5f5;
-  }
+  &__icon-wrapper
+    flex-shrink: 0
+    width: 52px
+    height: 52px
+    border-radius: 999px
+    background-color: #f1f5f5
+    display: grid
+    place-content: center
 
-  &__icon-wrapper {
-    flex-shrink: 0;
-    width: 52px;
-    height: 52px;
-    border-radius: 999px;
-    background-color: #f1f5f5;
-    display: grid;
-    place-content: center;
-  }
+  &__icon
+    max-width: 100%
+    max-height: 100%
 
-  &__icon {
-    max-width: 100%;
-    max-height: 100%;
-  }
+  &__name
+    font-weight: bold
+    font-size: 16px
+    line-height: 24px
+    color: var(--color-primary-600)
+    overflow: hidden
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 3
 
-  &__name {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--color-primary-600);
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-  }
+  &__delete-button
+    padding-right: 7px
 
-  &__delete-button {
-    padding-right: 7px;
-  }
+  &__delete-button-icon
+    fill: var(--color-gray-500)
+    height: 15px
+    width: 15px
 
-  &__delete-button-icon {
-    fill: var(--color-gray-500);
-    height: 15px;
-    width: 15px;
-  }
+  &__price-container
+    display: flex
+    align-items: center
+    gap: 8px
+    padding-top: 9px
+    font-size: 14px
+    line-height: 24px
+    font-weight: 300
+    color: var(--color-gray-800)
 
-  &__price-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding-top: 9px;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 300;
-    color: var(--color-gray-800);
+    & strong
+      font-size: 18px
+      line-height: 30px
+      font-weight: 700
 
-    & strong {
-      font-size: 18px;
-      line-height: 30px;
-      font-weight: 700;
-    }
-  }
-
-  &__quantity-info {
-    margin-left: auto;
-    color: var(--color-gray-500);
-  }
-}
+  &__quantity-info
+    margin-left: auto
+    color: var(--color-gray-500)
 </style>

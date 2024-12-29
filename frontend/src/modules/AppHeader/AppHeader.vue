@@ -21,44 +21,38 @@ import { headerNavRoutes } from "@/router";
     </div>
   </header>
 </template>
-<style lang="scss" scoped>
-.header {
-  position: relative;
-  width: 100%;
-  height: 89px;
-  border-bottom: 1px solid var(--color-gray-100);
-  padding-inline: 8px;
-  background-color: var(--color-white);
-  z-index: 100;
+<style lang="sass" scoped>
+.header
+  position: relative
+  width: 100%
+  height: 89px
+  border-bottom: 1px solid var(--color-gray-100)
+  padding-inline: 8px
+  background-color: var(--color-white)
+  z-index: 100
 
-  &__content {
-    width: 100%;
-    height: 100%;
-    max-width: 1206px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-  }
+  &__content
+    width: 100%
+    height: 100%
+    max-width: 1206px
+    margin: 0 auto
+    display: flex
+    align-items: center
 
-  &__logo {
-    display: block;
-    height: 44px;
-    width: auto;
-  }
+  &__logo
+    display: block
+    height: 44px
+    width: auto
 
-  &__nav {
-    margin-left: auto;
-  }
+  &__nav
+    margin-left: auto
 
-  &__controls {
-    display: flex;
-    gap: 4px;
-    margin-left: 12px;
+  &__controls
+    display: flex
+    gap: 4px
+    margin-left: 12px
 
-    @include xl {
-      gap: 10px;
-      margin-left: 73px;
-    }
-  }
-}
+    @include xl
+      gap: 10px
+      margin-left: 73px
 </style>

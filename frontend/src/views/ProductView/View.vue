@@ -43,54 +43,45 @@ onMounted(async () => {
     </section>
   </div>
 </template>
-<style lang="scss" scoped>
-.container {
-  padding: 0 8px;
-  flex: 1;
-}
+<style lang="sass" scoped>
+.container
+  padding: 0 8px
+  flex: 1
 
-.product {
-  height: 100%;
-  max-width: 1206px;
-  margin: 0 auto;
-  padding-top: 40px;
+.product
+  height: 100%
+  max-width: 1206px
+  margin: 0 auto
+  padding-top: 40px
 
-  &__image {
-    width: auto;
-    height: auto;
-    max-height: 200px;
-    margin-bottom: 16px;
-  }
+  &__image
+    width: auto
+    height: auto
+    max-height: 200px
+    margin-bottom: 16px
 
-  &__loader {
-    height: 100%;
-    width: 100%;
-  }
+  &__loader
+    height: 100%
+    width: 100%
 
-  &__name {
-    color: var(--color-primary-600);
-    margin-bottom: 16px;
-  }
+  &__name
+    color: var(--color-primary-600)
+    margin-bottom: 16px
 
-  &__description {
-    color: var(--color-gray-500);
-    margin-bottom: 12px;
-  }
+  &__description
+    color: var(--color-gray-500)
+    margin-bottom: 12px
 
-  &__price {
-    font-size: 24px;
-    color: var(--color-primary-600);
-    font-weight: 500;
-  }
+  &__price
+    font-size: 24px
+    color: var(--color-primary-600)
+    font-weight: 500
 
-  &__vat-info {
-    color: var(--color-gray-500);
-    font-size: 12px;
-  }
+  &__vat-info
+    color: var(--color-gray-500)
+    font-size: 12px
 
-  &__add-to-cart-btn {
-    margin-top: 8px;
-    letter-spacing: 1px;
-  }
-}
+  &__add-to-cart-btn
+    margin-top: 8px
+    letter-spacing: 1px
 </style>

@@ -7,26 +7,23 @@ defineProps<{ title: string; content: string }>();
     <p class="error-message__content">{{ content }}</p>
   </div>
 </template>
-<style lang="scss" scoped>
-.error-message {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  color: var(--color-warning-300);
-  text-align: center;
+<style lang="sass" scoped>
+.error-message
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  gap: 12px
+  color: var(--color-warning-300)
+  text-align: center
 
-  &__title {
-    font-size: 42px;
-    font-weight: 900;
-    line-height: 50px;
-  }
+  &__title
+    font-size: 42px
+    font-weight: 900
+    line-height: 50px
 
-  &__content {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 30px;
-  }
-}
+  &__content
+    font-size: 24px
+    font-weight: 400
+    line-height: 30px
 </style>

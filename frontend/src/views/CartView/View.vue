@@ -24,20 +24,17 @@ const cartStore = useCartStore();
     </div>
   </div>
 </template>
-<style lang="scss" scoped>
-.container {
-  padding-block: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+<style lang="sass" scoped>
+.container
+  padding-block: 20px
+  max-width: 1200px
+  margin: 0 auto
 
-  h1 {
-    margin-bottom: 32px;
-  }
+  h1
+    margin-bottom: 32px
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-}
+  .content
+    display: flex
+    flex-direction: column
+    gap: 16px
 </style>

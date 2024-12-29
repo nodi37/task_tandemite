@@ -27,9 +27,9 @@ export default defineConfig(() => {
             : "[hash:base64:6]", // Short hash for production
       },
       preprocessorOptions: {
-        scss: {
+        sass: {
           api: "modern-compiler",
-          additionalData: `@use "@/styles/_breakpoints.scss" as *;`,
+          additionalData: `@use '@/styles/_breakpoints.sass' as *`,
         },
       },
     },

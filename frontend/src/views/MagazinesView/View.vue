@@ -96,54 +96,44 @@ onMounted(async () => {
     </section>
   </div>
 </template>
-<style lang="scss" scoped>
-.container {
-  padding: 0 8px;
-}
+<style lang="sass" scoped>
+.container
+  padding: 0 8px
 
-.magazines {
-  max-width: 1206px;
-  margin: 0 auto;
+.magazines
+  max-width: 1206px
+  margin: 0 auto
 
-  &__heading {
-    font-size: 42px;
-    font-weight: 900;
-    line-height: 50px;
-    color: var(--color-primary-600);
-    margin: 40px 0 60px 0;
+  &__heading
+    font-size: 42px
+    font-weight: 900
+    line-height: 50px
+    color: var(--color-primary-600)
+    margin: 40px 0 60px 0
 
-    @include md {
-      margin: 124px 0 88px 0;
-    }
-  }
+    @include md
+      margin: 124px 0 88px 0
 
-  &__loader {
-    margin-block: 250px;
-  }
+  &__loader
+    margin-block: 250px
 
-  &__loading-error {
-    margin-block: 120px;
-  }
+  &__loading-error
+    margin-block: 120px
 
-  &__items-grid {
-    display: grid;
-    gap: 33px 20px;
-    margin-bottom: 38px;
-    grid-template-columns: 1fr;
+  &__items-grid
+    display: grid
+    gap: 33px 20px
+    margin-bottom: 38px
+    grid-template-columns: 1fr
 
-    @include sm {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    @include sm
+      grid-template-columns: repeat(2, 1fr)
 
-    @include lg {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
+    @include lg
+      grid-template-columns: repeat(4, 1fr)
 
-  &__pagination {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 74px;
-  }
-}
+  &__pagination
+    display: flex
+    justify-content: center
+    margin-bottom: 74px
 </style>

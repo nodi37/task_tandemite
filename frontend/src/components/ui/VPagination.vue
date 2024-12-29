@@ -57,30 +57,26 @@ const prevPage = () => {
   </nav>
 </template>
 
-<style lang="scss" scoped>
-.pagination {
-  display: flex;
-  overflow: hidden;
+<style lang="sass" scoped>
+.pagination
+  display: flex
+  overflow: hidden
 
-  &__button {
-    height: 33px;
-    width: 33px;
-    display: grid;
-    place-items: center;
-    font-size: 12px;
-    line-height: 24px;
-    color: var(--color-gray-500);
-  }
+  &__button
+    height: 33px
+    width: 33px
+    display: grid
+    place-items: center
+    font-size: 12px
+    line-height: 24px
+    color: var(--color-gray-500)
 
-  &__button--active {
-    font-size: 14px;
-    font-weight: bold;
-    background-color: var(--color-primary-600);
-    color: var(--color-white);
-  }
+  &__button--active
+    font-size: 14px
+    font-weight: bold
+    background-color: var(--color-primary-600)
+    color: var(--color-white)
 
-  &__button-chevron {
-    font-size: 16px;
-  }
-}
+  &__button-chevron
+    font-size: 16px
 </style>

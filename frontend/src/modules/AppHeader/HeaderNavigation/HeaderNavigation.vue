@@ -28,59 +28,50 @@ const opened = ref(false);
     </nav>
   </div>
 </template>
-<style lang="scss" scoped>
-.navigation {
-  position: relative;
+<style lang="sass" scoped>
+.navigation
+  position: relative
 
-  &__activator {
-    font-size: 24px;
+  &__activator
+    font-size: 24px
 
-    @include lg {
-      display: none;
-    }
-  }
+    @include lg
+      display: none
 
-  &__nav {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: white;
+  &__nav
+    display: none
+    position: absolute
+    top: 60px
+    right: 0
+    background-color: white
 
-    @include lg {
-      top: unset;
-      right: unset;
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      gap: 36px;
-      height: 100%;
-    }
+    @include lg
+      top: unset
+      right: unset
+      position: relative
+      display: flex
+      flex-direction: row
+      gap: 36px
+      height: 100%
 
-    &--active {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-      box-shadow: 5px 5px 15px rgba(0, 88, 81, 0.1);
-      padding: 20px 50px;
-    }
-  }
+    &--active
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 12px
+      box-shadow: 5px 5px 15px rgba(0, 88, 81, 0.1)
+      padding: 20px 50px
 
-  &__link {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    line-height: 24px;
-    color: var(--color-gray-800);
-  }
+  &__link
+    display: flex
+    align-items: center
+    font-size: 14px
+    line-height: 24px
+    color: var(--color-gray-800)
 
-  &__link:hover {
-    color: var(--color-primary-600);
-  }
+  &__link:hover
+    color: var(--color-primary-600)
 
-  &__link--active {
-    color: var(--color-primary-600);
-  }
-}
+  &__link--active
+    color: var(--color-primary-600)
 </style>

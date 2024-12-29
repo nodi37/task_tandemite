@@ -57,64 +57,57 @@ watch(
   </Teleport>
 </template>
 
-<style lang="scss" scoped>
-.cart {
-  position: relative;
+<style lang="sass" scoped>
+.cart
+  position: relative
 
-  &__body {
-    position: absolute;
-    top: 64px;
-    right: 0;
-    box-shadow: 5px 5px 15px #00585112;
-    width: 381px;
-    background-color: var(--color-white);
-    display: flex;
-    flex-direction: column;
-    max-height: calc(100vh - 100px);
-    overflow: hidden;
-  }
+  &__body
+    position: absolute
+    top: 64px
+    right: 0
+    box-shadow: 5px 5px 15px #00585112
+    width: 381px
+    background-color: var(--color-white)
+    display: flex
+    flex-direction: column
+    max-height: calc(100vh - 100px)
+    overflow: hidden
 
-  &__close-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+  &__close-button
+    position: absolute
+    top: 0
+    right: 0
 
-  &__content {
-    position: relative;
-    max-width: 381px;
-    padding-top: 16px;
-    height: 100%;
-    overflow: hidden;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
+  &__content
+    position: relative
+    max-width: 381px
+    padding-top: 16px
+    height: 100%
+    overflow: hidden
+    flex: 1
+    display: flex
+    flex-direction: column
 
-  &__title {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: bold;
-    margin: 0 0 16px 34px;
-  }
+  &__title
+    font-size: 18px
+    line-height: 30px
+    font-weight: bold
+    margin: 0 0 16px 34px
 
-  &__items-wrapper {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
-    padding-inline: 34px;
-    padding-bottom: 4px;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
+  &__items-wrapper
+    flex: 1
+    display: flex
+    flex-direction: column
+    gap: 11px
+    padding-inline: 34px
+    padding-bottom: 4px
+    overflow-y: auto
+    overflow-x: hidden
 
-  &__divider {
-    width: 100%;
-    height: 1px;
-    color: var(--color-gray-500);
-    opacity: 0.35;
-    margin: 20px 0 25px 0;
-  }
-}
+  &__divider
+    width: 100%
+    height: 1px
+    color: var(--color-gray-500)
+    opacity: 0.35
+    margin: 20px 0 25px 0
 </style>

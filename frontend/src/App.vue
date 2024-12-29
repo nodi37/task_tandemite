@@ -10,15 +10,13 @@ import { AppHeader } from "@/modules";
   </main>
 </template>
 
-<style lang="scss" scoped>
-.header {
-  flex-shrink: 0;
-}
+<style lang="sass" scoped>
+.header
+  flex-shrink: 0
 
-main {
-  flex: 1;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
+main
+  flex: 1
+  position: relative
+  display: flex
+  flex-direction: column
 </style>
