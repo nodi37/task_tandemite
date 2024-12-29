@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --color-primary-600: #0a655e;
+  --color-primary-800: #074944;
+  --color-secondary-600: #d1b352;
+  --color-secondary-800: #bb9e3f;
+  --color-gray-100: #f1f5f5;
+  --color-gray-300: #3e3e3e9d;
+  --color-gray-500: #6e8484;
+  --color-gray-800: #2e3838;
+  --color-white: #fff;
+  --color-warning-300: #ffcc00;
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+input {
+  border: none;
+  background: transparent;
+}
+
+fieldset {
+  border: none;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
